@@ -2,10 +2,10 @@
 
 Database, scripts for area of occurence and code for Shinyapp associated with the publication:
 
-## Database 
 African bat database: a curated database of occurrence records, distribution models and EOO and AOO conservation metrics for the bats of Sub-Saharan Africa
 Ara Monadjem, Cecilia Montauban, Paul Webala, Theresa Laverty, Eric Bakwo-Fils, Laura Torrent, Iroro Tanshi, Adam Kane, David Waldien and Peter Taylor
 
+## Database 
 Metadata for the database: 
 Family: family of bat record; 
 Genus: genus of bat record; 
