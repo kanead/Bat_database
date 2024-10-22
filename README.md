@@ -1,4 +1,4 @@
-# Bat_database
+# Africa bat database
 
 Database, scripts for area of occurence and code for Shinyapp associated with the publication:
 
