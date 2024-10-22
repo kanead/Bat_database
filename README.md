@@ -7,19 +7,19 @@ Ara Monadjem, Cecilia Montauban, Paul Webala, Theresa Laverty, Eric Bakwo-Fils, 
 
 ## Database 
 Metadata for the database: 
-*Family: family of bat record; 
-*Genus: genus of bat record; 
-*Species: species of bat record; 
-*Museum_number: the museum accession number of the bat record; 
-*Date: the date on which the bat was recorded; 
-*Year: the year in which the bat was recorded; 
-*Country: the country in which the bat was recorded; 
-*Location: the name of the location or locality that the bat was recorded; 
-*Latitude: the latitude in decimal degrees of the record; 
-*Longitude: the longitude in decimal degrees of the record; 
-*Reference: the source of the record; 
-*Holotype: whether the record is a type specimen; 
-*Checked: whether the bat specimen was examined by the authors.
+* Family: family of bat record; 
+* Genus: genus of bat record; 
+* Species: species of bat record; 
+* Museum_number: the museum accession number of the bat record; 
+* Date: the date on which the bat was recorded; 
+* Year: the year in which the bat was recorded; 
+* Country: the country in which the bat was recorded; 
+* Location: the name of the location or locality that the bat was recorded; 
+* Latitude: the latitude in decimal degrees of the record; 
+* Longitude: the longitude in decimal degrees of the record; 
+* Reference: the source of the record; 
+* Holotype: whether the record is a type specimen; 
+* Checked: whether the bat specimen was examined by the authors.
 
 ## Scripts  
 * 1_african bats_maxent models_all_species.R provides code to run maxent models for each African bat species
