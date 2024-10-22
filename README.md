@@ -2,6 +2,7 @@
 
 Database, scripts for area of occurence and code for Shinyapp associated with the publication:
 
+## Database 
 African bat database: a curated database of occurrence records, distribution models and EOO and AOO conservation metrics for the bats of Sub-Saharan Africa
 Ara Monadjem, Cecilia Montauban, Paul Webala, Theresa Laverty, Eric Bakwo-Fils, Laura Torrent, Iroro Tanshi, Adam Kane, David Waldien and Peter Taylor
 
@@ -20,11 +21,10 @@ Reference: the source of the record;
 Holotype: whether the record is a type specimen; 
 Checked: whether the bat specimen was examined by the authors.
 
-Shinyapp is available at https://adam-kane.shinyapps.io/african_bat_dist/
-
 ## Scripts  
 * 1_african bats_maxent models_all_species.R provides code to run maxent models for each African bat species
 * 2_aoo-eoo.R script to calculate EOO (extent of occurrence) and AOO (area of occupancy) for African bats
-* Bat_dist_shiny.R script to generate shiny app displaying searchable map of Africa for species occurrence records in the database 
+* Bat_dist_shiny.R script to generate shinyapp displaying searchable map of Africa for species occurrence records in the database 
 
-
+## Shinyapp
+Shinyapp is available at https://adam-kane.shinyapps.io/african_bat_dist/
