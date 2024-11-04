@@ -240,7 +240,7 @@ for(i in 1:208){#   length(TaxonName)){
   
   # Create "study area" by using buffer around occurrence points
   bats_max_p <- SpatialPoints(bats_max, proj4string=CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"))
-  bats_buff <- buffer(bats_max_p,1000000)  # adds a buffer (in meters), that will be used to create the "study area" for background points
+  bats_buff <- buffer(bats_max_p,100000)  # adds a buffer (in meters), that will be used to create the "study area" for background points
   bats_buff1 <- crop(bats_buff, africa)  # crop out areas out in the ocean
   bats_buff2 <- rasterize(bats_buff1, Env_final) # convert to raster (for later use to select background points - ie random pseudo-absence points)
   bats_buff_final <- mask(bats_buff2, Env_final) # mask buffer to ensure that it has same extent as enviro layers
