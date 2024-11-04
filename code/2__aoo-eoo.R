@@ -81,7 +81,7 @@ AOO_EOO <- function (x) {
   x.list <- list(x.raster@data@names, x.AOO$area$km2, x.pts.AOO$area$km2, area(x.EOO)/1000000, x.elev.min, x.elev.max)
   names(x.list) <- c("Species", "AOO Maxent", "AOO Known Locations", "EOO", "Minimum Elevation", "Maximum Elevation")
   results[[length(results) + 1]] <- x.list
-  writeRaster(x.raster, paste(path.AOO.rast,x.raster@data@names,"AOO", "MaxEnt", sep = ""), format = "GTiff", overwrite=TRUE)
+  writeRaster(x.mask, paste(path.AOO.rast,x.raster@data@names,"AOO", "MaxEnt", sep = ""), format = "GTiff", overwrite=TRUE)
   #write_sf(st_as_sf(x.EOO), driver = "ESRI Shapefile", path.EOO.shp, paste(x.raster@data@names,"_","EOO", sep = "")) this step doesn't run probably because shapefile name has a limit of 10 characters
   return(results)
 }
