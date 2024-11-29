@@ -38,7 +38,6 @@ conflicts_prefer(dplyr::filter)
 
 # currently using 2.5min grids
 # see script "African bats_Maxent models_preparing Africa-wide BIOCLIM variables.R"
-# setwd("C:/Dropbox/Ara/Publications/Mss - current/Bats - EOO and AOO values for African bats/Bioclim 2021_ver2.1_Africa")
 
 alt = raster("data/wc2.1_30s_elev/wc2.1_30s_elev.tif")
 bio2 = raster("data/wc2.1_30s_bio/wc2.1_30s_bio_2.tif") # 2
@@ -174,7 +173,7 @@ Env_final <- stack(
 
 # setwd("C:/Dropbox/Ara/Publications/Mss - current/Bats - EOO and AOO values for African bats/Manuscript/Scientific Data/Final African Bat Database")
 
-bats1 <- read.csv("data/African Bat Database_Sci Data_Final version 16 Oct 2024.csv") %>% 
+bats1 <- read.csv("data/African Bat Database_Sci Data_Final version 29 Nov 2024.csv") %>% 
   unite(GenSp, Genus, Species) %>% 
   dplyr::select(GenSp, Longitude, Latitude) %>% 
   rename(Species = GenSp) %>% # rename GenSp to Species

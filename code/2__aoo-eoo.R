@@ -22,18 +22,18 @@ library(changeRangeR)
 # Make empty list
 results <- list()
 
-dir <- c("")
+dir <- c("C:\\Users\\adamd\\Desktop\\bat_maps")
 sdm.list <- list.files(path=dir, 
                         pattern =".tif", full.names=TRUE)  # pattern = ".asc" for asci files
 
 # Read in the bat location data
 setwd("")
 
-bats1 <- read.csv("African Bat Database_Sci Data_Final version 16 Oct 2024.csv") %>% 
-  filter(Reject != "Yes") %>% 
+bats1 <- read.csv("African Bat Database_Sci Data_Final version 29 Nov 2024.csv") %>% 
+  # filter(Reject != "Yes") %>% 
   #filter(Island != "Yes") %>% # no need to filter for island because they have been rejected already
   #dplyr::select(-Island) %>% 
-  dplyr::select(Order, Genus, Species, Longitude, Latitude) 
+  dplyr::select(Genus, Species, Longitude, Latitude) 
 
 bats_new <- bats1 %>% 
    mutate(Species1 = gsub("cf. ","cf..", bats1$Species)) %>%
@@ -96,9 +96,6 @@ results.df <- apply(results.df, 2, as.character)
 #-------------------------------------------------------------------------------------------------------------------------------------
 # save the output as a csv file
 setwd("/A00_E00 output/")
-write.csv(results.df, "AOO_EOO values_6 Aug 2024.csv")
-
-
-
+write.csv(results.df, "AOO_EOO_values.csv")
 
 #-------------------------------------------------------------------------------------------------------------------------------------
