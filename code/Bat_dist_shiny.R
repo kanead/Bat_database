@@ -7,6 +7,8 @@ library(shiny)
 library(leaflet)
 library(tidyverse)
 library(rsconnect)
+options(rsconnect.max.bundle.size=3145728000)
+
 
 # For Testing
 # myFun <- function(n = 5000) {
